@@ -1,0 +1,27 @@
+<html>
+<head>
+       <title>App by Siddhesh</title>
+       <style>
+         *{font-size:50px;}
+          body{background-color:azure;}
+       </style>
+</head>
+<body>
+<center>
+       <h1>Holi hain..</h1>
+       <form onsubmit="colorme()">
+                <input type="submit" value="Mohe Rang De"/>
+       </form>
+       <script>
+              function colorme()
+              {
+                    event.preventDefault();
+                    let colors = ["red","green","orange","yellow","violet","purple","brown","cyan","azure","pink"];
+                    let r = parseInt(Math.random() * colors.length);
+                    document.body.style.background = colors[r];
+
+              }
+       </script>
+</center>
+</body>
+</html>
